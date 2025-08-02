@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-     <h1 id="demo">Welcome to My Web Page</h1>
-  <p id="text">This is the original paragraph.</p>
-  <button onclick="document.getElementById('text').textContent='The paragraph text has changed'">Click Me! Change Paragtaph</button>
-  <button onclick="document.getElementById('demo').textContent='The heading text has changed'">Click Me! Change Heading</button>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="left" class="box"></div>
+    <div id="right" class="box"></div>
+  </div>
+  <h1 id="demo">Welcome to My Web Page</h1>
+  <p id="text">This is the original paragraph.</p>
+  <button onclick="document.getElementById('text').textContent='The paragraph text has changed'">Click Me! Change
+    Paragtaph</button>
+  <button onclick="document.getElementById('demo').textContent='The heading text has changed'">Click Me! Change
+    Heading</button>
+  <script>
+    let left, right;
+    left = document.getElementById("left")
+    right = document.getElementById("right")
+    let mouse = false
+  </script>
 </body>
-</html> 
+
+</html>

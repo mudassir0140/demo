@@ -27,3 +27,25 @@
     button:hover {
       background-color: #0056b3;
     }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .box {
+      flex: 1;
+      transition: background-color 0.3s;
+    }
+    #left {
+      background-color: blue;
+    }
+    #right {
+      background-color: yellow;
+    }
