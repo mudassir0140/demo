@@ -26,21 +26,25 @@
     let mouse = false
     right.addEventListener("mouseenter",()=>{
       right.style.background = "blue";
+      right.innerHTML="HOVER";
       mouse=true;
-    
+      
     })
     right.addEventListener("mouseleave",()=>{
       
+      right.innerHTML="";
       right.style.background = "yellow";
       mouse=false;
       
     })
     left.addEventListener("mouseenter",()=>{
       left.style.background="yellow"
+      left.innerHTML="hover"
       mouse=true
     })
     left.addEventListener("mouseleave",()=>{
-      left.style.background="blue"
+      left.style.background="blue";
+      left.innerHTML=""
       mouse=false
     })
   </script>
