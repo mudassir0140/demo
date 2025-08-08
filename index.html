@@ -24,6 +24,25 @@
     left = document.getElementById("left")
     right = document.getElementById("right")
     let mouse = false
+    right.addEventListener("mouseenter",()=>{
+      right.style.background = "blue";
+      mouse=true;
+    
+    })
+    right.addEventListener("mouseleave",()=>{
+      
+      right.style.background = "yellow";
+      mouse=false;
+      
+    })
+    left.addEventListener("mouseenter",()=>{
+      left.style.background="yellow"
+      mouse=true
+    })
+    left.addEventListener("mouseleave",()=>{
+      left.style.background="blue"
+      mouse=false
+    })
   </script>
 </body>
 
